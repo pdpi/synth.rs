@@ -1,0 +1,12 @@
+[package]
+name = "synth"
+version = "0.1.0"
+authors = ["pdpi"]
+
+[[bin]]
+name = "synth"
+path = "src/bin/synth.rs"
+
+[dependencies]
+portaudio = "0.4.9"
+glutin = "*"
