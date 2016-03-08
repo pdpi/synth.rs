@@ -71,9 +71,6 @@ impl Source for Envelope {
   fn trigger(&mut self, pitch: usize, amplitude: f32) {
     self.state = EnvelopeState::Attack;
     self.osc.trigger(pitch, amplitude);
-    self.osc.pitch = pitch;
-    self.osc.amplitude = amplitude;
-
   }
 
   fn play(&mut self, output: &mut [f32]) {
@@ -81,6 +78,7 @@ impl Source for Envelope {
     let mut i = 0;
     while i < output.len() {
       let control = self.control_output();
+      /* left */
       output[i] *= control;
       /* right */
       output[i + 1] *= control;
