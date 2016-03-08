@@ -47,7 +47,7 @@ impl Source for Oscillator {
       /* right */
       output[i + 1] = out;
       self.phase += self.pitch;
-      self.phase %= self.sample_rate;
+      while self.phase >= self.sample_rate { self.phase -= self.sample_rate; }
       i+=2;
     }
   }

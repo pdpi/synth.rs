@@ -14,7 +14,7 @@ You can build and run the program through cargo with `cargo run`.
 
 You can use your computer keyboard to play with the synthesizer.
 
-'ZXCVBNNM,' map to the white keys on a piano, ranging from C to C
+'ZXCVBNNM,' map to the white keys on a piano, ranging from C to C.
 'SD GHJ' map to the black keys in the same range, C# to A#.
 
 ## To Do:

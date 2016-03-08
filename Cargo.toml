@@ -8,5 +8,5 @@ name = "synth"
 path = "src/bin/synth.rs"
 
 [dependencies]
-portaudio = "0.4.9"
+portaudio = "0.6.3"
 glutin = "*"
